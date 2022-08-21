@@ -22,8 +22,10 @@ ol {
     --another-grey: #2F303A;
     --black-color: #000;
     --blue-color: #2196F3;
-    --white-color: #ffffff;
+    --white-color: #ffffff; 
     --another-white: #F5F4FA;
+    --border-header-color: #ECECEC;
+    --border-items-color: #EEEEEE;
 
 }
 
@@ -63,6 +65,7 @@ body {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-header-color);
 }
 
 .page-logo {
@@ -274,6 +277,8 @@ img {
 
 .address-block {
     background: var(--another-grey);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .page-logo-footer {
@@ -289,6 +294,7 @@ img {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    margin-top: 20px;
 }
 
 .geoloc {
@@ -299,8 +305,17 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 /* стилі сторінки портфоліо */
 
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+    
 .portfolio-title {
     position: absolute;
     white-space: nowrap;
@@ -322,7 +337,11 @@ img {
 
 .portfolio-filter {
     list-style: none;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
 }
 
 .portfolio-filter-btn {
@@ -334,10 +353,20 @@ img {
     border-radius: 4px;
     color: var(--dark-color);
     border-color: var(--another-white);
+    border-width: 0;
+    padding: 6px 22px;
 }
 
 .portfolio-list {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-list-title {
@@ -352,4 +381,9 @@ img {
     font-size: 16px;
     line-height: 1.88;
     color: var(--grey-color);
+}
+
+.port-title-text {
+padding: 20px 24px ;
+border: 1px solid var(--border-items-color);
 }
