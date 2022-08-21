@@ -210,8 +210,7 @@ body {
 }
 
 .thr-sec-item {
-    flex-basis: calc((100%-60px)/3);
-    padding-right: 0;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 /* стилі четвертої секції */
@@ -239,6 +238,7 @@ img {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .fourth-sec-items {
@@ -246,8 +246,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
-    flex-basis: calc((100%-90px)/4);
-    margin: 0;
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .photo-teammate {
