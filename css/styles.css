@@ -1,0 +1,273 @@
+/* стилі головної сторінки, хедера і футера */
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+:root {
+    --dark-color: #212121;
+    --grey-color: #757575;
+    --another-grey: #2F303A;
+    --black-color: #000;
+    --blue-color: #2196F3;
+    --white-color: #ffffff;
+    --another-white: #F5F4FA;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+}
+
+.page-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.page-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--black-color);
+    
+}
+
+.logo-web {
+    color: var(--blue-color);
+}
+
+.header-nav a:hover,
+.header-nav a:focus, 
+.mail-tel a:hover,
+.mail-tel a:focus {
+    color: var(--blue-color);
+}
+
+li.current-page a{
+    color: var(--blue-color);
+}
+
+.header-nav, .mail-tel{
+    list-style: none;
+}
+
+.studio,.portfolio,.contact {
+    color: var(--dark-color)
+}
+
+.mailto,.tel {
+    color: var(--grey-color)
+}
+
+.link {
+    text-decoration: none;
+}
+
+.first-section {
+    background-color: var(--another-grey);
+}
+
+.effect-solut {
+    color:var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.open-btn {
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.second-section {
+    font-size: 14px;
+    
+}
+
+.our-features {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.secd-sect-list {
+    list-style: none;
+}
+
+.secd-sect-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--dark-color);
+}
+
+.secd-sect-text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.what-we-do {
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.thrid-sec-list {
+    list-style: none;
+}
+
+.fourth-section {
+    background: var(--another-white);
+}
+
+img {
+    display: block;
+}
+
+.our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.fourth-sec-list {
+    list-style: none;
+}
+
+.fourth-sec-items {
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.name-teammate {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.address-block {
+    background: var(--another-grey);
+}
+
+.page-logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white-color);
+}
+
+.footer-contacts {
+    list-style: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.geoloc {
+    color: var(--white-color);
+}
+
+.footer-mail, .footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* стилі сторінки портфоліо */
+
+.portfolio-title {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.portfolio-filter button:hover,
+.portfolio-filter button:focus {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+.portfolio-filter {
+    list-style: none;
+    
+}
+
+.portfolio-filter-btn {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    background-color: var(--another-white);
+    border-radius: 4px;
+    color: var(--dark-color);
+    border-color: var(--another-white);
+}
+
+.portfolio-list {
+    list-style: none;
+}
+
+.portfolio-list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--dark-color);
+}
+
+.portfolio-list-text {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--grey-color);
+}
